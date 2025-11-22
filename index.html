@@ -1,53 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payal Pachangane | Cloud & DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payal Pachangane | Cloud & DevOps Engineer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <h1>Payal Pachangane</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero -->
-    <section id="hero">
-        <div class="hero-container">
-            <div class="hero-text">
-                <h2>Hello, I'm <span>Payal Pachangane</span></h2>
-                <p>Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
-                <div class="contact-btns">
-                    <a href="mailto:pachanganepayal@gmail.com" class="btn">Email Me</a>
-                    <a href="https://linkedin.com/in/payal" target="_blank" class="btn">LinkedIn</a>
-                    <a href="https://github.com/payal1184" target="_blank" class="btn">GitHub</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="payal.jpg" alt="Payal Pachangane">
-            </div>
-        </div>
-    </section>
+<!-- Header -->
+<header>
+  <nav>
+    <h1>Payal Pachangane</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- About / Summary -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am an aspiring Cloud & DevOps Engineer with strong AWS, serverless, and cloud computing skills. I design, deploy, and optimize cloud infrastructure with a focus on automation, cost efficiency, and reliability. Passionate about learning and delivering modern cloud solutions.</p>
-    </section>
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h2>Hello, I'm <span>Payal Pachangane</span></h2>
+      <p>Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
+      <div class="contact-btns">
+        <a href="mailto:pachanganepayal@gmail.com" class="btn">Email Me</a>
+        <a href="https://linkedin.com/in/payal" target="_blank" class="btn">LinkedIn</a>
+        <a href="https://github.com/payal1184" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="payal.jpg" alt="Payal Pachangane">
+    </div>
+  </div>
+</section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
+<!-- About -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am an aspiring Cloud & DevOps Engineer with strong AWS, serverless, and cloud computing skills. I design, deploy, and optimize cloud infrastructure with a focus on automation, cost efficiency, and reliability.</p>
+</section>
 
-        <div class="project-card">
-            <h3>Serve
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <span class="skill" data-skill="aws">AWS</span>
+    <span class="skill" data-skill="git">Git</span>
+    <span class="skill" data-skill="jenkins">Jenkins</span>
+    <span class="skill" data-skill="terraform">Terraform</span>
+    <span class="skill" data-skill="docker">Docker</span>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div id="projects-container">
+    <!-- AWS Projects -->
+    <div class="project-card" data-skill="aws">
+      <h3>3-Tier Architecture on AWS</h3>
+      <p>Designed and deployed a 3-tier web app using EC2, RDS, and VPC with public/private subnets.</p>
+      <a href="https://github.com/payal1184/aws-3tier" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-skill="aws">
+      <h3>Static Website Using AWS S3 & CloudFront</h3>
+      <p>Deployed a secure static website on S3 and distributed globally using CloudFront.</p>
+      <a href="https://github.com/payal1184/Website-Hosting-using-AWS-S3" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-skill="aws">
+      <h3>Serverless Weather Notification System</h3>
+      <p>Built serverless notification system using Lambda, SNS, IAM, and EventBridge.</p>
+      <a href="https://github.com/payal1184/WeatherNotification" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Git Projects -->
+    <div class="project-card" data-skill="git">
+      <h3>Git Repository Examples</h3>
+      <p>Practiced Git workflows and branching strategies.</p>
+      <a href="https://github.com/payal1184/git-repo" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- Jenkins Projects -->
+    <div class="project-card" data-skill="jenkins">
+      <h3>Jenkins CI/CD Pipeline Setup</h3>
+      <p>Configured CI/CD pipeline for automatic build, test, and deployment.</p>
+      <a href="https://github.com/payal1184/jenkins-pipeline" target="_blank">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Education -->
+<section id="education">
+  <h2>Education</h2>
+  <div class="education-card">
+    <p><strong>Bachelor of Computer Application (BCA)</strong></p>
+    <p>Sinhagad College of Science, Pune (2022-2025)</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-card">
+    <p>Email: <a href="mailto:pachanganepayal@gmail.com">pachanganepayal@gmail.com</a></p>
+    <p>Phone: 91 9307544977</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/payal" target="_blank">linkedin.com/in/payal</a></p>
+    <p>GitHub: <a href="https://github.com/payal1184" target="_blank">github.com/payal1184</a></p>
+    <p>Location: Pune, Maharashtra</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Payal Pachangane</p>
+</footer>
+
+<!-- Script for filtering projects -->
+<script>
+  const skillElements = document.querySelectorAll('.skill');
+  const projectCards = document.querySelectorAll('.project-card');
+
+  skillElements.forEach(skill => {
+    skill.addEventListener('click', () => {
+      const selectedSkill = skill.dataset.skill;
+
+      projectCards.forEach(card => {
+        if(card.dataset.skill === selectedSkill){
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
