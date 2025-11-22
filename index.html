@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payal Pachangane | Creative Portfolio</title>
+<title>Payal Pachangane | Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header -->
 <header>
   <nav>
     <h1>Payal Pachangane</h1>
@@ -22,7 +21,6 @@
   </nav>
 </header>
 
-<!-- Hero Section -->
 <section id="hero">
   <div class="hero-container">
     <div class="hero-text">
@@ -35,12 +33,11 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="payal.jpg" alt="Payal Pachangane">
+      <img src="images/payal.jpg" alt="Payal Pachangane">
     </div>
   </div>
 </section>
 
-<!-- Skills Section -->
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills-container">
@@ -52,48 +49,32 @@
   </div>
 </section>
 
-<!-- Projects Section -->
 <section id="projects">
   <h2>Projects</h2>
   <div id="projects-container">
-
-    <!-- AWS Projects -->
     <div class="project-card" data-skill="aws">
       <h3>3-Tier Architecture on AWS</h3>
       <p>Deployed a 3-tier web app using EC2, RDS, VPC with public/private subnets.</p>
       <a href="https://github.com/payal1184/aws-3tier" target="_blank">View on GitHub</a>
     </div>
-
     <div class="project-card" data-skill="aws">
       <h3>Static Website Using AWS S3 & CloudFront</h3>
       <p>Secure static website on S3 with CloudFront distribution.</p>
       <a href="https://github.com/payal1184/Website-Hosting-using-AWS-S3" target="_blank">View on GitHub</a>
     </div>
-
-    <div class="project-card" data-skill="aws">
-      <h3>Serverless Weather Notification System</h3>
-      <p>Notification system using Lambda, SNS, IAM, and EventBridge.</p>
-      <a href="https://github.com/payal1184/WeatherNotification" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- Git Projects -->
     <div class="project-card" data-skill="git">
       <h3>Git Repository Examples</h3>
       <p>Practiced Git workflows & branching strategies.</p>
       <a href="https://github.com/payal1184/git-repo" target="_blank">View on GitHub</a>
     </div>
-
-    <!-- Jenkins Projects -->
     <div class="project-card" data-skill="jenkins">
       <h3>Jenkins CI/CD Pipeline Setup</h3>
       <p>Configured CI/CD pipeline for automatic build, test, deployment.</p>
       <a href="https://github.com/payal1184/jenkins-pipeline" target="_blank">View on GitHub</a>
     </div>
-
   </div>
 </section>
 
-<!-- Education Section -->
 <section id="education">
   <h2>Education</h2>
   <div class="education-card">
@@ -102,7 +83,6 @@
   </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact">
   <h2>Contact Me</h2>
   <div class="contact-card">
@@ -114,31 +94,10 @@
   </div>
 </section>
 
-<!-- Footer -->
 <footer>
   <p>&copy; 2025 Payal Pachangane</p>
 </footer>
 
-<!-- JavaScript for skill filtering + card animations -->
-<script>
-const skills = document.querySelectorAll('.skill');
-const projects = document.querySelectorAll('.project-card');
-
-skills.forEach(skill => {
-  skill.addEventListener('click', () => {
-    const selected = skill.dataset.skill;
-    projects.forEach(p => {
-      if(p.dataset.skill === selected) {
-        p.style.display = 'block';
-        p.classList.add('fade-in');
-      } else {
-        p.style.display = 'none';
-        p.classList.remove('fade-in');
-      }
-    });
-  });
-});
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
