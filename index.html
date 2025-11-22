@@ -26,7 +26,7 @@
 <section id="hero">
   <div class="hero-container">
     <div class="hero-text">
-      <h2>Hello, I'm <span>Payal Pachangane</span></h2>
+      <h2>Hello, I'm <span class="highlight">Payal Pachangane</span></h2>
       <p class="animated-text">Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
       <div class="contact-btns">
         <a href="mailto:pachanganepayal@gmail.com" class="btn bounce">Email Me</a>
@@ -60,33 +60,33 @@
     <!-- AWS Projects -->
     <div class="project-card" data-skill="aws">
       <h3>3-Tier Architecture on AWS</h3>
-      <p>Designed and deployed a 3-tier web app using EC2, RDS, and VPC with public/private subnets.</p>
+      <p>Deployed a 3-tier web app using EC2, RDS, VPC with public/private subnets.</p>
       <a href="https://github.com/payal1184/aws-3tier" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card" data-skill="aws">
       <h3>Static Website Using AWS S3 & CloudFront</h3>
-      <p>Deployed a secure static website on S3 and distributed globally using CloudFront.</p>
+      <p>Secure static website on S3 with CloudFront distribution.</p>
       <a href="https://github.com/payal1184/Website-Hosting-using-AWS-S3" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project-card" data-skill="aws">
       <h3>Serverless Weather Notification System</h3>
-      <p>Built serverless notification system using Lambda, SNS, IAM, and EventBridge.</p>
+      <p>Notification system using Lambda, SNS, IAM, and EventBridge.</p>
       <a href="https://github.com/payal1184/WeatherNotification" target="_blank">View on GitHub</a>
     </div>
 
     <!-- Git Projects -->
     <div class="project-card" data-skill="git">
       <h3>Git Repository Examples</h3>
-      <p>Practiced Git workflows and branching strategies.</p>
+      <p>Practiced Git workflows & branching strategies.</p>
       <a href="https://github.com/payal1184/git-repo" target="_blank">View on GitHub</a>
     </div>
 
     <!-- Jenkins Projects -->
     <div class="project-card" data-skill="jenkins">
       <h3>Jenkins CI/CD Pipeline Setup</h3>
-      <p>Configured CI/CD pipeline for automatic build, test, and deployment.</p>
+      <p>Configured CI/CD pipeline for automatic build, test, deployment.</p>
       <a href="https://github.com/payal1184/jenkins-pipeline" target="_blank">View on GitHub</a>
     </div>
 
@@ -119,26 +119,25 @@
   <p>&copy; 2025 Payal Pachangane</p>
 </footer>
 
-<!-- JavaScript for filtering projects -->
+<!-- JavaScript for skill filtering + card animations -->
 <script>
-  const skillElements = document.querySelectorAll('.skill');
-  const projectCards = document.querySelectorAll('.project-card');
+const skills = document.querySelectorAll('.skill');
+const projects = document.querySelectorAll('.project-card');
 
-  skillElements.forEach(skill => {
-    skill.addEventListener('click', () => {
-      const selectedSkill = skill.dataset.skill;
-
-      projectCards.forEach(card => {
-        if(card.dataset.skill === selectedSkill){
-          card.style.display = 'block';
-          card.classList.add('fade-in');
-        } else {
-          card.style.display = 'none';
-          card.classList.remove('fade-in');
-        }
-      });
+skills.forEach(skill => {
+  skill.addEventListener('click', () => {
+    const selected = skill.dataset.skill;
+    projects.forEach(p => {
+      if(p.dataset.skill === selected) {
+        p.style.display = 'block';
+        p.classList.add('fade-in');
+      } else {
+        p.style.display = 'none';
+        p.classList.remove('fade-in');
+      }
     });
   });
+});
 </script>
 
 </body>
