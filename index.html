@@ -1,91 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Payal | AWS S3 & CloudFront Project</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payal Pachangane Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-gradient"></div>
+    <header>
+        <nav>
+            <h1>Payal Pachangane</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header class="top-bar">
-    <div class="logo">☁️ Payal | AWS</div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <p class="tag">AWS Project • Static Website</p>
-      <h1>Secure & Scalable Static Website Hosting</h1>
-      <p class="subtitle">
-        Welcome to my AWS static website hosted on <strong>Amazon S3</strong> and
-        delivered securely through <strong>Amazon CloudFront</strong>.
-      </p>
-      <div class="hero-buttons">
-        <a href="#about" class="btn primary">View Project Details</a>
-        <a href="#features" class="btn ghost">Why S3 + CloudFront?</a>
-      </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="payal.jpg" alt="Payal Pachangane">
+            <p>Hello! I'm Payal, a Cloud Enthusiast and Web Developer. I love building clean and scalable web applications using AWS, HTML, CSS, and JavaScript.</p>
+        </div>
     </section>
 
-    <section id="about" class="card">
-      <h2>About this Project</h2>
-      <p>
-        This is a static website that demonstrates <strong>secure</strong> and
-        <strong>scalable</strong> hosting using AWS.
-        The HTML and CSS files are stored in a private S3 bucket and served
-        through a CloudFront distribution with HTTPS enabled.
-      </p>
-      <ul class="bullet-list">
-        <li>Private S3 bucket with Origin Access Control (OAC)</li>
-        <li>CloudFront distribution with HTTP → HTTPS redirection</li>
-        <li>Deployed as part of my AWS learning journey</li>
-      </ul>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: AWS Static Website</h3>
+            <p>Hosted a secure static website on S3 with CloudFront.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Portfolio Website</h3>
+            <p>Responsive portfolio website using HTML & CSS.</p>
+        </div>
     </section>
 
-    <section id="features" class="grid">
-      <article class="card feature">
-        <h3>🔒 Security</h3>
-        <p>
-          The S3 bucket is not public. Only CloudFront can access the content
-          using Origin Access Control, which keeps the website secure.
-        </p>
-      </article>
-      <article class="card feature">
-        <h3>⚡ Performance</h3>
-        <p>
-          CloudFront works as a CDN and delivers content from edge locations,
-          reducing latency and improving page load times.
-        </p>
-      </article>
-      <article class="card feature">
-        <h3>💰 Cost Effective</h3>
-        <p>
-          Static hosting on S3 with CloudFront is highly cost-effective and
-          requires zero server maintenance.
-        </p>
-      </article>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS Cloud Services (S3, EC2, CloudFront)</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Linux, Git</li>
+            <li>Azure Fundamentals</li>
+        </ul>
     </section>
 
-    <section id="contact" class="card contact">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm <strong>Payal Pachangane</strong>, a cloud enthusiast exploring
-        AWS services like EC2, S3, IAM, and CloudFront.
-      </p>
-      <p>
-        This project is part of my cloud journey and can be shared in
-        <strong>GitHub, resume, and interviews</strong>.
-      </p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: payal@example.com</p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/payal" target="_blank">linkedin.com/in/payal</a></p>
+        <p>GitHub: <a href="https://github.com/payal" target="_blank">github.com/payal</a></p>
     </section>
-  </main>
 
-  <footer class="footer">
-    © 2025 Payal | AWS S3 & CloudFront Project
-  </footer>
+    <footer>
+        <p>&copy; 2025 Payal Pachangane. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
