@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payal Pachangane | Cloud & DevOps Engineer</title>
+<title>Payal Pachangane | Creative Portfolio</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,25 +13,25 @@
   <nav>
     <h1>Payal Pachangane</h1>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hero">Home</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
 
-<!-- Hero -->
+<!-- Hero Section -->
 <section id="hero">
   <div class="hero-container">
     <div class="hero-text">
       <h2>Hello, I'm <span>Payal Pachangane</span></h2>
-      <p>Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
+      <p class="animated-text">Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
       <div class="contact-btns">
-        <a href="mailto:pachanganepayal@gmail.com" class="btn">Email Me</a>
-        <a href="https://linkedin.com/in/payal" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://github.com/payal1184" target="_blank" class="btn">GitHub</a>
+        <a href="mailto:pachanganepayal@gmail.com" class="btn bounce">Email Me</a>
+        <a href="https://linkedin.com/in/payal" target="_blank" class="btn bounce">LinkedIn</a>
+        <a href="https://github.com/payal1184" target="_blank" class="btn bounce">GitHub</a>
       </div>
     </div>
     <div class="hero-image">
@@ -40,13 +40,7 @@
   </div>
 </section>
 
-<!-- About -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>I am an aspiring Cloud & DevOps Engineer with strong AWS, serverless, and cloud computing skills. I design, deploy, and optimize cloud infrastructure with a focus on automation, cost efficiency, and reliability.</p>
-</section>
-
-<!-- Skills -->
+<!-- Skills Section -->
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills-container">
@@ -58,10 +52,11 @@
   </div>
 </section>
 
-<!-- Projects -->
+<!-- Projects Section -->
 <section id="projects">
   <h2>Projects</h2>
   <div id="projects-container">
+
     <!-- AWS Projects -->
     <div class="project-card" data-skill="aws">
       <h3>3-Tier Architecture on AWS</h3>
@@ -98,7 +93,7 @@
   </div>
 </section>
 
-<!-- Education -->
+<!-- Education Section -->
 <section id="education">
   <h2>Education</h2>
   <div class="education-card">
@@ -107,7 +102,7 @@
   </div>
 </section>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact">
   <h2>Contact Me</h2>
   <div class="contact-card">
@@ -124,7 +119,7 @@
   <p>&copy; 2025 Payal Pachangane</p>
 </footer>
 
-<!-- Script for filtering projects -->
+<!-- JavaScript for filtering projects -->
 <script>
   const skillElements = document.querySelectorAll('.skill');
   const projectCards = document.querySelectorAll('.project-card');
@@ -136,8 +131,10 @@
       projectCards.forEach(card => {
         if(card.dataset.skill === selectedSkill){
           card.style.display = 'block';
+          card.classList.add('fade-in');
         } else {
           card.style.display = 'none';
+          card.classList.remove('fade-in');
         }
       });
     });
