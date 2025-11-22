@@ -11,13 +11,15 @@ nav ul li a {color:white; text-decoration:none; font-weight:bold; transition:0.3
 nav ul li a:hover {color:#f1c40f;}
 
 /* Hero Section */
-#hero {display:flex; justify-content:center; align-items:center; padding:60px 20px; background:linear-gradient(120deg,#16a085,#1abc9c); color:white; text-align:center;}
-.hero-container {display:flex; flex-wrap:wrap; gap:30px; align-items:center; justify-content:center;}
-.hero-text h2 span.highlight {color:#f1c40f;}
-.animated-text {animation:textGlow 2s infinite alternate;}
-.hero-image img {width:180px; height:180px; border-radius:50%; border:4px solid #f1c40f; transition:transform 0.5s;}
-.hero-image img:hover {transform: scale(1.1) rotate(5deg);}
-
+#hero {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px 20px;
+    background: pink; /* Test color */
+    color:white;
+    text-align:center;
+}
 /* Buttons */
 .contact-btns {margin-top:15px;}
 .btn {background:#f1c40f; color:#1abc9c; padding:10px 20px; margin:5px; text-decoration:none; border-radius:5px; font-weight:bold; transition:0.3s;}
