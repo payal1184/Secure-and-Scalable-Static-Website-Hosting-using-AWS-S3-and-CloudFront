@@ -157,7 +157,7 @@ body {
   border: 1px solid transparent;
   text-decoration: none;
   transition: transform 0.14s ease-out, box-shadow 0.14s ease-out,
-    background 0.14s ease-out, border-color 0.14s ease-out, color 0.14s ease-out;
+   background 0.14s ease-out, border-color 0.14s ease-out, color 0.14s ease-out;
 }
 
 .btn.primary {
