@@ -1,103 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payal Pachangane | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Payal | AWS S3 & CloudFront Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg-gradient"></div>
 
-<header>
-  <nav>
-    <h1>Payal Pachangane</h1>
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="top-bar">
+    <div class="logo">☁️ Payal | AWS</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="hero">
-  <div class="hero-container">
-    <div class="hero-text">
-      <h2>Hello, I'm <span class="highlight">Payal Pachangane</span></h2>
-      <p class="animated-text">Cloud & DevOps Engineer | AWS | Terraform | Jenkins</p>
-      <div class="contact-btns">
-        <a href="mailto:pachanganepayal@gmail.com" class="btn bounce">Email Me</a>
-        <a href="https://linkedin.com/in/payal" target="_blank" class="btn bounce">LinkedIn</a>
-        <a href="https://github.com/payal1184" target="_blank" class="btn bounce">GitHub</a>
+  <main class="container">
+    <section class="hero">
+      <p class="tag">AWS Project • Static Website</p>
+      <h1>Secure & Scalable Static Website Hosting</h1>
+      <p class="subtitle">
+        Welcome to my AWS static website hosted on <strong>Amazon S3</strong> and
+        delivered securely through <strong>Amazon CloudFront</strong>.
+      </p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn primary">View Project Details</a>
+        <a href="#features" class="btn ghost">Why S3 + CloudFront?</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/payal.jpg" alt="Payal Pachangane">
-    </div>
-  </div>
-</section>
+    </section>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <span class="skill" data-skill="aws">AWS</span>
-    <span class="skill" data-skill="git">Git</span>
-    <span class="skill" data-skill="jenkins">Jenkins</span>
-    <span class="skill" data-skill="terraform">Terraform</span>
-    <span class="skill" data-skill="docker">Docker</span>
-  </div>
-</section>
+    <section id="about" class="card">
+      <h2>About this Project</h2>
+      <p>
+        This is a static website that demonstrates <strong>secure</strong> and
+        <strong>scalable</strong> hosting using AWS.
+        The HTML and CSS files are stored in a private S3 bucket and served
+        through a CloudFront distribution with HTTPS enabled.
+      </p>
+      <ul class="bullet-list">
+        <li>Private S3 bucket with Origin Access Control (OAC)</li>
+        <li>CloudFront distribution with HTTP → HTTPS redirection</li>
+        <li>Deployed as part of my AWS learning journey</li>
+      </ul>
+    </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div id="projects-container">
-    <div class="project-card" data-skill="aws">
-      <h3>3-Tier Architecture on AWS</h3>
-      <p>Deployed a 3-tier web app using EC2, RDS, VPC with public/private subnets.</p>
-      <a href="https://github.com/payal1184/aws-3tier" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card" data-skill="aws">
-      <h3>Static Website Using AWS S3 & CloudFront</h3>
-      <p>Secure static website on S3 with CloudFront distribution.</p>
-      <a href="https://github.com/payal1184/Website-Hosting-using-AWS-S3" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card" data-skill="git">
-      <h3>Git Repository Examples</h3>
-      <p>Practiced Git workflows & branching strategies.</p>
-      <a href="https://github.com/payal1184/git-repo" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project-card" data-skill="jenkins">
-      <h3>Jenkins CI/CD Pipeline Setup</h3>
-      <p>Configured CI/CD pipeline for automatic build, test, deployment.</p>
-      <a href="https://github.com/payal1184/jenkins-pipeline" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-</section>
+    <section id="features" class="grid">
+      <article class="card feature">
+        <h3>🔒 Security</h3>
+        <p>
+          The S3 bucket is not public. Only CloudFront can access the content
+          using Origin Access Control, which keeps the website secure.
+        </p>
+      </article>
+      <article class="card feature">
+        <h3>⚡ Performance</h3>
+        <p>
+          CloudFront works as a CDN and delivers content from edge locations,
+          reducing latency and improving page load times.
+        </p>
+      </article>
+      <article class="card feature">
+        <h3>💰 Cost Effective</h3>
+        <p>
+          Static hosting on S3 with CloudFront is highly cost-effective and
+          requires zero server maintenance.
+        </p>
+      </article>
+    </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="education-card">
-    <p><strong>Bachelor of Computer Application (BCA)</strong></p>
-    <p>Sinhagad College of Science, Pune (2022-2025)</p>
-  </div>
-</section>
+    <section id="contact" class="card contact">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Payal Pachangane</strong>, a cloud enthusiast exploring
+        AWS services like EC2, S3, IAM, and CloudFront.
+      </p>
+      <p>
+        This project is part of my cloud journey and can be shared in
+        <strong>GitHub, resume, and interviews</strong>.
+      </p>
+    </section>
+  </main>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-card">
-    <p>Email: <a href="mailto:pachanganepayal@gmail.com">pachanganepayal@gmail.com</a></p>
-    <p>Phone: 91 9307544977</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/payal" target="_blank">linkedin.com/in/payal</a></p>
-    <p>GitHub: <a href="https://github.com/payal1184" target="_blank">github.com/payal1184</a></p>
-    <p>Location: Pune, Maharashtra</p>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Payal Pachangane</p>
-</footer>
-
-<script src="script.js"></script>
+  <footer class="footer">
+    © 2025 Payal | AWS S3 & CloudFront Project
+  </footer>
 </body>
 </html>
