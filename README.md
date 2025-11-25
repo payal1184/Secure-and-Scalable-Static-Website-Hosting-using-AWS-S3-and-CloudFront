@@ -63,22 +63,9 @@ This endpoint is used as the **origin** for the CloudFront distribution.
 
 ![S3 Bucket Policy](image/Screenshot%20(329).png)
 
-The bucket policy is configured so that:
-
-- **Public access is blocked** using S3 Block Public Access settings.
-- Only the **CloudFront distribution** is allowed to access the bucket objects.
-
-Example policy logic (conceptual):
-
-- Principal: `cloudfront.amazonaws.com`
-- Action: `s3:GetObject`
-- Resource: `arn:aws:s3:::payal-portfolio-site/*`
-- Condition: Allow only when the request comes from a specific CloudFront distribution ARN.
-
-This configuration ensures:
-- The S3 bucket is **not publicly accessible directly**.
-- Content is delivered securely only through **CloudFront**.
-
+- **Public access blocked** via S3 Block Public Access.
+- Only the **CloudFront distribution** can access bucket objects.
+- Ensures content is **securely delivered** and bucket is **not publicly accessible**.
 ---
 
 ## 🌍 CloudFront Configuration
@@ -146,7 +133,7 @@ Invalidating `/*` ensures that the entire cache is refreshed, and users see the 
 
 ---
 
-## 🌐 Final Website – Browser Output (via CloudFront)
+ with S3 origin & update bucket policy to allow only CloudFront  
 
 ## 🌐 Live Website
 
@@ -168,24 +155,22 @@ This demonstrates:
 
 ## ✅ Features Demonstrated
 
-- Static website hosting using **Amazon S3**
-- Secure content delivery using **Amazon CloudFront**
-- **Bucket encryption (SSE-S3)** for data at rest
-- **Restricted S3 access** using bucket policy + CloudFront origin access
-- Global content delivery with **low latency**
-- Cache invalidation using **CloudFront invalidations**
-
+- S3 static website hosting
+- CloudFront HTTPS delivery
+- SSE-S3 bucket encryption
+- Restricted access (CloudFront only)
+- Cache invalidation for updates
 ---
 
 ## 🚀 How to Use This Setup for Your Own Projects
 
-1. Create an S3 bucket and upload static website files.
-2. Enable **static website hosting** on the S3 bucket.
-3. Configure **default encryption** (SSE-S3) for the bucket.
-4. Create a **CloudFront distribution** with the S3 website endpoint as the origin.
-5. Update the **bucket policy** to only allow CloudFront to access the content.
-6. Use CloudFront domain (HTTPS) as the main URL for your website.
-7. When you update files in S3, create **CloudFront invalidations** to refresh the cache.
+1. Create S3 bucket & upload files
+2. Enable static website hosting
+3. Configure SSE-S3 encryption
+4. Create CloudFront distribution with S3 origin
+5. Update bucket policy for CloudFront only
+6. Use CloudFront HTTPS URL
+7. Invalidate cache after updates
 
 ---
 
