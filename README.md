@@ -74,17 +74,11 @@ This endpoint is used as the **origin** for the CloudFront distribution.
 
 ![CloudFront General](image/Screenshot%20(323).png)
 
-A CloudFront distribution is created to serve the static website globally.
+- **Origin:** S3 bucket `payal-portfolio-site`  
+- **Domain:** `d1m6el92zo8940.cloudfront.net`  
+- **Price class:** All edge locations  
 
-**Highlights:**
-- **Origin:** S3 bucket `payal-portfolio-site`
-- **Distribution domain name:**  
-  `d1m6el92zo8940.cloudfront.net`
-- **Description:** Static website on S3 with CloudFront
-- **Price class:** All edge locations (best performance)
-- **Supported HTTP versions:** HTTP/2, HTTP/1.1, HTTP/1.0
-
-This allows the website to be accessed with **low latency** from multiple regions.
+This enables **low-latency global access**.
 
 ---
 
@@ -106,16 +100,12 @@ This confirms that **all content is fetched from the S3 static website hosting e
 
 ![CloudFront Behaviors](image/Screenshot%20(336).png)
 
-The **Behaviors** tab defines how CloudFront handles requests.
+- **Viewer protocol policy:** Redirect HTTP → HTTPS  
+- **Allowed HTTP methods:** GET, HEAD  
 
-**Configuration details:**
-- **Default cache behavior:** Enabled  
-- **Viewer protocol policy:** Redirect HTTP to HTTPS  
-- **Allowed HTTP methods:** Limited to required methods for static content (e.g., GET, HEAD)
+This ensures **secure HTTPS access** and minimal required methods.  
+Default caching behavior improves **performance** by storing content at edge locations, reducing latency for global users.
 
-This ensures:
-- All users are **automatically redirected to HTTPS**, improving security.
-- Only necessary HTTP methods are allowed, keeping the configuration **simple and secure**.
 
 ---
 
