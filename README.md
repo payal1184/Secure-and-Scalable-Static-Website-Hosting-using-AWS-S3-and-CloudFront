@@ -5,7 +5,7 @@ The website is stored in a private S3 bucket and delivered securely through a Cl
 
 ---
 
-## 🏗 Architecture Overview
+## 🧩 Architecture Overview
 
 - **Amazon S3** – Stores static website files (`index.html`, `style.css`, etc.).
 - **Amazon CloudFront** – Distributes the content globally with low latency.
@@ -25,6 +25,8 @@ Example files:
 - `index.html`
 - `style.css`
 - `README.md`
+- `project.html`  
+- `s3-cloudfront.html`
 
 ---
 
