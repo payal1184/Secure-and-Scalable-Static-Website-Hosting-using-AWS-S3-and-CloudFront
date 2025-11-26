@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="page-gradient">
+  <!-- Top nav -->
   <header class="top-nav">
     <div class="logo">● Payal | AWS</div>
     <nav>
@@ -18,22 +19,34 @@
   </header>
 
   <main class="content-page">
+    <!-- breadcrumb -->
     <div class="breadcrumb">
       <a href="index.html">Home</a> › Project Details
     </div>
 
-    <h1>Project Details – Secure Static Website on AWS</h1>
-    <p class="subtitle">
-      Detailed breakdown of how this static website is hosted securely using
-      Amazon S3 and Amazon CloudFront.
-    </p>
+    <!-- hero section for details page -->
+    <section class="card main-card">
+      <p style="font-size:0.85rem; color:#9aa4c8; margin-bottom:6px;">
+        Static Website • Amazon S3 + CloudFront
+      </p>
+      <h1 style="margin-bottom:6px;">Project Details – Secure Static Website on AWS</h1>
+      <p class="subtitle" style="margin-bottom:0;">
+        Here is a closer look at how this static portfolio website is hosted on a
+        private S3 bucket and delivered securely worldwide using Amazon CloudFront.
+      </p>
+    </section>
 
+    <!-- two main cards -->
     <section class="card" id="architecture">
       <h2>Architecture Overview</h2>
+      <p style="margin-bottom:10px;">
+        The goal of this architecture is to keep the S3 bucket completely
+        private, while still serving the website publicly with high performance.
+      </p>
       <ul>
-        <li>Static HTML/CSS files hosted in a private S3 bucket</li>
-        <li>CloudFront distribution configured with the S3 static website endpoint as origin</li>
-        <li>Origin Access Control (OAC) used so only CloudFront can access S3</li>
+        <li>Static HTML/CSS files hosted in a <strong>private S3 bucket</strong></li>
+        <li>CloudFront distribution using the S3 <strong>static website endpoint</strong> as origin</li>
+        <li><strong>Origin Access Control (OAC)</strong> so only CloudFront can access S3</li>
         <li>Bucket policy denies direct public access and allows only CloudFront</li>
         <li>HTTPS enabled on CloudFront for secure content delivery</li>
       </ul>
@@ -44,45 +57,6 @@
       <ol>
         <li>Create an S3 bucket and enable static website hosting.</li>
         <li>Upload HTML, CSS and assets (images, icons, etc.).</li>
-        <li>Keep bucket <strong>private</strong> – block all public access.</li>
+        <li>Keep the bucket <strong>private</strong> – block all public access.</li>
         <li>Create a CloudFront distribution pointing to the S3 website endpoint.</li>
-        <li>Configure Origin Access Control (OAC) and attach to the origin.</li>
-        <li>Update S3 bucket policy to allow only the CloudFront OAC.</li>
-        <li>Enable HTTP → HTTPS redirection in CloudFront behaviors.</li>
-        <li>Test the website using the CloudFront domain URL.</li>
-      </ol>
-    </section>
-
-    <section class="card">
-      <h2>Security Highlights</h2>
-      <ul>
-        <li>No direct public access to the S3 bucket.</li>
-        <li>All requests go through CloudFront, which acts as a secure front layer.</li>
-        <li>HTTPS ensures data in transit is encrypted.</li>
-        <li>Bucket policy + OAC combination protects your content.</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Use Cases</h2>
-      <p>
-        This architecture is ideal for:
-      </p>
-      <ul>
-        <li>Portfolio websites</li>
-        <li>Static documentation sites</li>
-        <li>Landing pages for products</li>
-        <li>Any static front-end hosted without servers</li>
-      </ul>
-    </section>
-
-    <div class="back-link">
-      <a href="index.html" class="btn btn-outline">← Back to Main Page</a>
-    </div>
-  </main>
-
-  <footer class="footer">
-    © 2025 Payal | AWS S3 &amp; CloudFront Project
-  </footer>
-</body>
-</html>
+        <li>Configure <strong>Origin Access Control (OAC)<
