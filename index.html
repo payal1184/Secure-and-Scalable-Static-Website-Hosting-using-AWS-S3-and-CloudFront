@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,63 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="bg-gradient"></div>
-
-  <header class="top-bar">
-    <div class="logo">☁️ Payal | AWS</div>
-    <nav class="nav-links">
+<body class="page-gradient">
+  <header class="top-nav">
+    <div class="logo">● Payal | AWS</div>
+    <nav>
       <a href="#about">About</a>
       <a href="#features">Features</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <p class="tag">AWS Project • Static Website</p>
-      <h1>Secure & Scalable Static Website Hosting</h1>
-      <p class="subtitle">
-        Welcome to my AWS static website hosted on <strong>Amazon S3</strong> and
-        delivered securely through <strong>Amazon CloudFront</strong>.
-      </p>
-      <div class="hero-buttons">
-        <a href="#about" class="btn primary">View Project Details</a>
-        <a href="#features" class="btn ghost">Why S3 + CloudFront?</a>
-      </div>
-    </section>
+  <main class="hero">
+    <div class="breadcrumb">AWS Project • Static Website</div>
 
-    <section id="about" class="card">
+    <h1>Secure &amp; Scalable Static Website Hosting</h1>
+
+    <p class="subtitle">
+      Welcome to my AWS static website hosted on <strong>Amazon S3</strong> and
+      delivered securely through <strong>Amazon CloudFront</strong>.
+    </p>
+
+    <div class="hero-buttons">
+      <!-- इथे फक्त link बदललाय -->
+      <a class="btn btn-primary" href="project.html">
+        View Project Details
+      </a>
+      <a class="btn btn-outline" href="why-s3-cloudfront.html">
+        Why S3 + CloudFront?
+      </a>
+    </div>
+
+    <section class="card main-card" id="about">
       <h2>About this Project</h2>
       <p>
         This is a static website that demonstrates <strong>secure</strong> and
-        <strong>scalable</strong> hosting using AWS.
-        The HTML and CSS files are stored in a private S3 bucket and served
-        through a CloudFront distribution with HTTPS enabled.
+        <strong>scalable</strong> hosting using AWS. The HTML and CSS files are
+        stored in a private S3 bucket and served through a CloudFront distribution
+        with HTTPS enabled.
       </p>
-      <ul class="bullet-list">
+      <ul>
         <li>Private S3 bucket with Origin Access Control (OAC)</li>
         <li>CloudFront distribution with HTTP → HTTPS redirection</li>
         <li>Deployed as part of my AWS learning journey</li>
       </ul>
     </section>
 
-    <section id="features" class="grid">
-      <article class="card feature">
+    <section class="cards-row" id="features">
+      <article class="card">
         <h3>🔒 Security</h3>
         <p>
           The S3 bucket is not public. Only CloudFront can access the content
           using Origin Access Control, which keeps the website secure.
         </p>
       </article>
-      <article class="card feature">
+
+      <article class="card">
         <h3>⚡ Performance</h3>
         <p>
           CloudFront works as a CDN and delivers content from edge locations,
           reducing latency and improving page load times.
         </p>
       </article>
-      <article class="card feature">
+
+      <article class="card">
         <h3>💰 Cost Effective</h3>
         <p>
           Static hosting on S3 with CloudFront is highly cost-effective and
@@ -71,21 +78,18 @@
       </article>
     </section>
 
-    <section id="contact" class="card contact">
+    <section class="card about-me" id="contact">
       <h2>About Me</h2>
       <p>
         Hi, I'm <strong>Payal Pachangane</strong>, a cloud enthusiast exploring
-        AWS services like EC2, S3, IAM, and CloudFront.
-      </p>
-      <p>
-        This project is part of my cloud journey and can be shared in
-        <strong>GitHub, resume, and interviews</strong>.
+        AWS services like EC2, S3, IAM, and CloudFront. This project is part of my
+        cloud journey and can be shared in <strong>GitHub, resume, and interviews</strong>.
       </p>
     </section>
   </main>
 
   <footer class="footer">
-    © 2025 Payal | AWS S3 & CloudFront Project
+    © 2025 Payal | AWS S3 &amp; CloudFront Project
   </footer>
 </body>
 </html>

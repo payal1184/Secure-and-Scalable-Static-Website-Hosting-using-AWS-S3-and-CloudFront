@@ -127,11 +127,11 @@ Invalidating `/*` ensures that the entire cache is refreshed, and users see the 
 
 ## 🌐 Live Website
 
-![Static Website via CloudFront](image/d1m6el92zo8940.cloudfront.net_.png)
-
 Access the website via CloudFront HTTPS URL:
 
 `https://d1m6el92zo8940.cloudfront.net`
+
+![Static Website via CloudFront](image/d1m6el92zo8940.cloudfront.net_.png)
 
 This demonstrates:
 - Website hosted on **Amazon S3**
